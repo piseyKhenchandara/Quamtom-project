@@ -1,21 +1,30 @@
-Luxury Fashion E-commerce Website
+# Luxury Fashion E-commerce Website
+
 A modern e-commerce frontend built with React and Vite, showcasing a luxury fashion brand with classical aesthetic elements.
-Features
 
-Modern UI/UX with classical art elements
-Product categories: Hoodies, T-Shirts, Pants, Bags, and Caps
-Luxury collection with detailed material information
-Responsive design for all devices
-Fast performance with Vite
 
-Tech Stack
+## Preview
 
-React
-Vite
-JavaScript/JSX
+![Hoodies Collection](src/assets/ReadMeImage/hoodies.png)
+![Quantum View](src/assets/ReadMeImage/QuantomView.png)
 
-Installation
-bash# Clone the repository
+## Features
+
+- Modern UI/UX with classical art elements
+- Product categories: Hoodies, T-Shirts, Pants, Bags, and Caps
+- Luxury collection with detailed material information
+- Responsive design for all devices
+- Fast performance with Vite
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript/JSX
+
+## Installation
+```bash
+# Clone the repository
 git clone https://github.com/piseyKhenchandara/Quamtom-project.git
 
 # Navigate to project directory
@@ -26,7 +35,10 @@ npm install
 
 # Start development server
 npm run dev
-Available Scripts
+```
+
+## Available Scripts
+```bash
 npm run dev      # Start development server
 npm run build    # Build for production
 npm run preview  # Preview production build
@@ -56,9 +68,12 @@ Quamtom-project/
 ├── package.json         # Dependencies and scripts
 ├── README.md
 └── vite.config.js       # Vite configuration
+```
 
+## Browser Support
 
-Browser Support
 Chrome, Firefox, Safari, Edge (latest versions)
-Repository
-https://github.com/piseyKhenchandara/Quamtom-project.git
+
+## Repository
+
+[https://github.com/piseyKhenchandara/Quamtom-project.git](https://github.com/piseyKhenchandara/Quamtom-project.git)
