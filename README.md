@@ -1,12 +1,64 @@
-# React + Vite
+Luxury Fashion E-commerce Website
+A modern e-commerce frontend built with React and Vite, showcasing a luxury fashion brand with classical aesthetic elements.
+Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern UI/UX with classical art elements
+Product categories: Hoodies, T-Shirts, Pants, Bags, and Caps
+Luxury collection with detailed material information
+Responsive design for all devices
+Fast performance with Vite
 
-Currently, two official plugins are available:
+Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React
+Vite
+JavaScript/JSX
 
-## Expanding the ESLint configuration
+Installation
+bash# Clone the repository
+git clone https://github.com/piseyKhenchandara/Quamtom-project.git
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Navigate to project directory
+cd Quamtom-project
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+Available Scripts
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+```
+
+## Project Structure
+```
+Quamtom-project/
+├── .git/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/          # Images, fonts, icons
+│   ├── components/      # Reusable React components
+│   ├── data/            # Static data and configurations
+│   ├── layout/          # Layout components
+│   ├── pages/           # Page components
+│   ├── App.css          # Global styles
+│   ├── App.jsx          # Main application component
+│   ├── index.css        # Base styles
+│   └── main.jsx         # Application entry point
+├── .gitattributes
+├── .gitignore
+├── eslint.config.js     # ESLint configuration
+├── index.html           # HTML template
+├── package-lock.json
+├── package.json         # Dependencies and scripts
+├── README.md
+└── vite.config.js       # Vite configuration
+
+
+Browser Support
+Chrome, Firefox, Safari, Edge (latest versions)
+Repository
+https://github.com/piseyKhenchandara/Quamtom-project.git
