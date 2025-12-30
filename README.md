@@ -2,11 +2,18 @@
 
 A modern e-commerce frontend built with React and Vite, showcasing a luxury fashion brand with classical aesthetic elements.
 
+---
+
+## Live Demo
+
+Experience the live application: [https://6953d3f71d20c70dffe6c6ef--lively-swan-32e419.netlify.app/](https://6953d3f71d20c70dffe6c6ef--lively-swan-32e419.netlify.app/)
+
+---
 
 ## Preview
 
-![Hoodies Collection](src/assets/ReadMeImage/hoodies.png)
 ![Quantum View](src/assets/ReadMeImage/QuantomView.png)
+![Hoodies Collection](src/assets/ReadMeImage/hoodies.png)
 
 ## Features
 
