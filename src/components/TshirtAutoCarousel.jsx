@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import tshirt1 from '../assets/AutoCarousel/tshirt1.jpg';
 import tshirt2 from '../assets/AutoCarousel/tshirt2.jpg';

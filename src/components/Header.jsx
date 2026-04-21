@@ -1,22 +1,25 @@
+'use client';
+
 import Quantom from '../assets/HeaderImage/Quantom.png';
 import { IoSearchOutline } from "react-icons/io5";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-import { useState, useEffect } from "react"; // Import useEffect for scroll event listener
-import { Link, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import Quantity from '../assets/HeaderImage/Quantity.png';
 import { data } from '../data/LuxaryProuducts';
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const navigate = useNavigate(); // Add useNavigate hook for programmatic navigation
+  const router = useRouter();
 
   const searchChoice = [
     {
       title: "TRENDING SEARCHES",
-      items: ["Hoodies", "T-shirts", "Bags"], // Added T-shirts
+      items: ["Hoodies", "T-shirts", "Bags"],
     },
-    
+
     {
       title: 'PARTNER-SHIP && ABOUT-US',
       items: ['Partnership', 'About-Us']
@@ -30,30 +33,27 @@ const Header = () => {
     setSearchTerm(value);
   };
 
-  // Handle click on search items
   const handleItemClick = (item) => {
-    setIsSearchOpen(false); // Close the search dropdown
-    setSearchTerm(''); // Clear the search term
+    setIsSearchOpen(false);
+    setSearchTerm('');
 
-    // Navigate based on clicked item
     switch (item.toLowerCase()) {
       case 'hoodies':
-        navigate('/hoodies');
+        router.push('/hoodies');
         break;
       case 't-shirts':
-        navigate('/tshirts'); // Note: using "tshirts" without hyphen for path consistency
+        router.push('/tshirts');
         break;
         case 'bags':
-          navigate('/bags'); // Note: using "tshirts" without hyphen for path consistency
+          router.push('/bags');
           break;
         case 'partnership':
-          navigate('/partnership');
+          router.push('/partnership');
           break;
         case 'about-us':
-          navigate('/about-us');
-          break; 
+          router.push('/about-us');
+          break;
       default:
-        // For items without specific routes, do nothing or add default navigation
         break;
     }
   };
@@ -81,17 +81,15 @@ const Header = () => {
     }];
   };
 
-  // Add scroll event listener to close the dropdown on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (isSearchOpen) {
-        setIsSearchOpen(false); // Close the dropdown when scrolling
+        setIsSearchOpen(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -100,15 +98,15 @@ const Header = () => {
   return (
     <header className="flex flex-row justify-between items-center px-5 py-3 h-12 w-full md:w-[90%]  bg-white z-50">
       <div className="flex flex-row gap-10 items-center">
-        <Link to="/">
+        <Link href="/">
           <img src={Quantom} alt="Logo" className="w-[30px] scale-x-[-1] cursor-pointer" />
         </Link>
 
         <ul className="flex-row gap-10 items-center text-b font-[400] hidden md:inline-flex cursor-pointer">
-          <Link to='partnership'>
+          <Link href='/partnership'>
             <li>Partner-ship</li>
           </Link>
-          <Link to='about-Us'>
+          <Link href='/about-us'>
             <li>About-Us</li>
           </Link>
         </ul>
@@ -144,7 +142,7 @@ const Header = () => {
                   <li
                     key={itemIndex}
                     className="py-1 text-sm text-gray-600 hover:text-black cursor-pointer"
-                    onClick={() => handleItemClick(item)} // Add click handler
+                    onClick={() => handleItemClick(item)}
                   >
                     {data.title === "TRENDING SEARCHES" && (
                       <div className="flex flex-row items-center gap-2">
@@ -166,7 +164,7 @@ const Header = () => {
           ))}
         </div>
 
-        <Link to="/login">
+        <Link href="/login">
           <CgProfile className="text-[25px] cursor-pointer" />
         </Link>
       </div>

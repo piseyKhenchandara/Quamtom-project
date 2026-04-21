@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect, useRef } from 'react'; // Correct import (not react-router-dom)
 import Poster1 from '../../assets/AutoCarousel/Poster1.jpg';
 import Poster2 from '../../assets/AutoCarousel/Poster2.jpg';

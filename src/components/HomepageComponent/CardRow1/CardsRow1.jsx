@@ -1,9 +1,11 @@
+'use client';
+
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import EachCardRow1 from './EachCardRow1';
 
 const CardsRow1 = ({ data, productType }) => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className="w-[90%] flex flex-row gap-5 overflow-x-scroll">
@@ -11,7 +13,7 @@ const CardsRow1 = ({ data, productType }) => {
         <div 
           key={eachData.id} 
           className="flex flex-col items-center flex-shrink-0 cursor-pointer"
-          onClick={() => navigate(`/${productType}/${eachData.id}`)} // Dynamic path
+          onClick={() => router.push(`/${productType}/${eachData.id}`)}
         >
           <EachCardRow1
             img={eachData.img}

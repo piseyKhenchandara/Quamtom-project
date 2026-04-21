@@ -1,10 +1,12 @@
+'use client';
+
 import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useRouter } from "next/navigation";
 
 const ProductDetail = ({ data, productType, onBuyClick }) => {
-  const { id } = useParams();
+  const id = useParams()?.id;
   const product = Object.values(data).find((item) => item.id === id);
-  const navigate = useNavigate();
+  const router = useRouter();
   const [selectedColor, setSelectedColor] = useState(product?.colors[0]);
   const [count, setCount] = useState(1); // Default quantity is 1
 
@@ -128,7 +130,7 @@ const ProductDetail = ({ data, productType, onBuyClick }) => {
             </button>
             <button
               className="border-2 border-black px-6 py-3 shadow-md hover:bg-black hover:text-white transition duration-300"
-              onClick={() => navigate(-1)}
+              onClick={() => router.back()}
             >
               Back
             </button>

@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import bag1 from '../assets/AutoCarousel/bag1.jpg';
 import bag2 from '../assets/AutoCarousel/bag2.jpg';

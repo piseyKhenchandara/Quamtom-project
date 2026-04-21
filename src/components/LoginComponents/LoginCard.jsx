@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 import { FaFacebook, FaGoogle, FaDiscord, FaTelegram,FaInstagram } from "react-icons/fa";
 const LoginCard = ({brandName}) =>{

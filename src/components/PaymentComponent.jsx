@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useRef, useEffect } from "react";
 import Creditcard from '../assets/PaymentImage/Creditcard.png'
 import Paypal from '../assets/PaymentImage/Paypal.png'

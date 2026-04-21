@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useEffect } from 'react';
 import cap1 from '../assets/AutoCarousel/cap1.jpg';
 import cap2 from '../assets/AutoCarousel/cap2.jpg';

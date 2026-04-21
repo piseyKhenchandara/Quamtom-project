@@ -1,3 +1,4 @@
+'use client';
 import React, { useState, useRef } from 'react';
 import Premium1 from '../../assets/HoodiesImage/PremiumHoodies1.png';
 import Premium2 from '../../assets/HoodiesImage/PremiumHoodies2.png';

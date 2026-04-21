@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import hoodyIcon from '../../assets/MenuIcon/hoodyIcon.jpg';
 import tShirtIcon from '../../assets/MenuIcon/shirtIcon.jpg';
 import pantIcon from '../../assets/MenuIcon/pantIcon.jpg';
@@ -18,7 +18,7 @@ const MenuIcon = () => {
         <div className='w-full'>
             <div className='flex flex-row justify-around md:justify-center md:gap-15 gap-2 m-5 cursor-pointer'>
                 {Icons.map(icon => (
-                    <Link to={icon.path} key={icon.title} className='flex flex-col items-center '>
+                    <Link href={icon.path} key={icon.title} className='flex flex-col items-center '>
                         <img src={icon.iconImg} alt={icon.title} className='w-[1.5rem] md:w-[3rem]' />
                         <p>{icon.title}</p>
                     </Link>

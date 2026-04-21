@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -35,7 +37,7 @@ const Footer = () => {
                 <span>˃</span>
               </div>
             </div>
-            
+
             <div className="mt-8">
               <h3 className="uppercase text-sm font-medium mb-4">Sign up for QUANTOM updates</h3>
               <p className="text-xs text-gray-400 mb-4">
@@ -74,9 +76,9 @@ const Footer = () => {
           <div className="w-12 h-12 flex items-center justify-center bg-gray-800 rounded-md">
             <span className="text-lg font-bold">Q</span>
           </div>
-         
+
           <FaFacebook className='text-4xl'/>
-        
+
           <FaInstagram className='text-4xl' />
         </div>
 

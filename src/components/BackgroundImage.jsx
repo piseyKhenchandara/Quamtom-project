@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useRef, useState } from 'react';
 import AncientGreceD3D from '../assets/HeaderImage/3Dburst.png';
 
